@@ -12,7 +12,8 @@ module.exports = (sequelize, DataTypes) => {
         },
         nip:{
             type: DataTypes.INTEGER,
-            allowNull: false
+            allowNull: false,
+            unique : true
         },
         alamat:{
             type: DataTypes.STRING,
