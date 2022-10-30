@@ -12,7 +12,8 @@ module.exports=(sequelize, DataTypes) => {
         },
         npm:{
             type: DataTypes.INTEGER,
-            allowNull: false
+            allowNull: false,
+            unique : true
         },
         tahun_ajaran:{
             type: DataTypes.STRING,
